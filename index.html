@@ -3,23 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- tailwindcss cdn -->
+  <!-- others cdn -->
+  <link href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css"rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <!-- Font awesome icon  -->
+  <script src="https://kit.fontawesome.com/776cb67dc8.js" crossorigin="anonymous"></script>
+    <!-- tailwindcss cdn -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            header_color: '#da373d',
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              header_color: '#FFFFFF',
+            }
           }
         }
       }
-    }
-  </script>
+  </script>   
   <!-- custom css -->
   <link rel="stylesheet" href="assets/custom.css">
+  <title>Ed Tech Website</title>
 </head>
 <body>
-  <h1 class="text-3xl font-bold text-header_color">Hello world</h1>
-</body>
+    <div class="container mx-auto mt-1">
+        <nav class="navbar w-full bg-header_color">
+            <div class="container-lg px-0">
+                <div class="flex w-full items-center">
+                  <img src="./assets/img/company/company-1.png" alt="">
+                    <button navbar-trigger="" class="navbar-trigger ml-auto mr-0 mb-0 lg:hidden xl:hidden"type="button"aria-controls="navigation"aria-expanded="false"aria-label="Toggle navigation">
+                    <span class="navbar-trigger-icon">
+                    <span bar1="" class="navbar-trigger-bar mt-1"><span class="hidden origin-[10%_10%] rotate-45"></span></span>
+                    <span bar2="" class="bar2 navbar-trigger-bar mt-2"></span>
+                    <span bar3="" class="bar3 navbar-trigger-bar mt-2" ><span class="mt-mt-[0.4375rem] hidden origin-[10%_90%] -rotate-45"></span></span>
+                    </span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" navbar-menu="">
+                <ul class="navbar-nav">
+                    <li>
+                    <a class="nav-link" aria-current="page" href="#">
+                      <i class="fa-solid fa-house mr-2"></i>
+                        <span>Home</span>
+                    </a>
+                    </li>
+                    <li>
+                    <a class="nav-link" href="#">
+                      <i class="fa-brands fa-readme mr-2"></i>
+                        <span>Blog</span>
+                    </a>
+                    </li>
+                    <li class="flex">
+                        <a class="nav-link" href="#">
+                          <i class="fa-regular fa-lightbulb mr-2"></i>
+                            <span>Course</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">
+                          <i class="fa-regular fa-circle-question mr-2"></i>
+                            <span>Faqs</span>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    <!-- cdn js-->
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"></script>
+  </body>
 </html>
